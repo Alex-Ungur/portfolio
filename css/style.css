@@ -32,7 +32,7 @@ header {
     grid-area: 1 / 1 / 2 / 11;
     height: var(--header-height);
     width: 100%;
-    grid-template-columns: 135px repeat(5, 1fr) repeat(4, 170px);
+    grid-template-columns: 135px repeat(4, 1fr) repeat(4, 170px) 1fr;
     grid-template-rows: 1fr;
     gap: 0 10px;
     align-items: center;
@@ -267,9 +267,9 @@ header {
             }
 
         .a_propos_photo {
-            background: url("/ressources/Capture.JPG")no-repeat center / cover;
+            background: url("/ressources/profil.jpg")no-repeat center / cover;
             border-radius: 5px;
-            width: 70%;
+            width: 60%;
             /* filter: grayscale(100%) contrast(1);
             mix-blend-mode: multiply; */
         }
