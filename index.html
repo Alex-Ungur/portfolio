@@ -27,9 +27,18 @@
             <a href="path_to_file" download="proposed_file_name" class="header-btn">CV</a>
         </nav>
 
-        <aside class="socials_btns"></aside>
+        <aside class="socials_btns w100">
+            <ul class="socials_sticky flex-column">
+                <li>
+                    <a href="https://www.linkedin.com/in/alex-ungur-59b01012b/" id="linkedin" class="socials_btn"></a>
+                </li>
+                <li>
+                    <a href="mailto:alex.ungur@outlook.fr" id="mail" class="socials_btn"></a>
+                </li>
+           </ul>
+        </aside>
         <aside class="contact_mail"></aside>
-        <section id="introduction" class="w100 flex-row">
+        <article id="introduction" class="w100 flex-row">
             <div class="introduction_content flex-column">
                 <p class="introduction_header">Bonjour, je m'appelle</p>
                 <h1 class="introduction_name">Alex Ungur.</h1>
@@ -42,7 +51,7 @@
                 </p>
                 <a href="#a_propos" class="introduction_btn generic_btn flex-row">Lire la suite</a>
             </div>
-        </section>
+        </article>
 
         <section id="a_propos">
             <div class="a_propos_header">
@@ -56,7 +65,7 @@
                 <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptate atque commodi inventore, blanditiis fuga?</p>
             </div>
 
-            <div class="a_propos_photo w100 h100">
+            <div class="a_propos_photo h100">
                 <div class="overlay h100 w100"></div>
             </div>
 
@@ -72,9 +81,61 @@
             </div>
         </section>
 
+        <section id="experience">
+            <div class="experience_header">
+                <p class="experience_header_text numbered_heading flex-row">Experience</p>
+            </div>
+
+            <div class="experience_tablist flex-column h100">
+                <button id="exp_cds_btn" class="tablist_item selected">CDS SOFT</button>
+                <button id="exp_chu_btn" class="tablist_item">CHU Nice</button>
+                <button id="exp_rt2i_btn" class="tablist_item">RT2i</button>
+            </div>
+
+            <div class="experience_list">
+                <div id="exp_cds" class="experience_item selected">
+                    <p class="exp_title">Développeur Front-End <span class="colored_text">@ CDS Soft Studiel</span></p>
+                    <p class="exp_date">Mai 2021</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                    </ul>
+                </div>
+
+                <div id="exp_chu" class="experience_item">
+                    <p class="exp_title">Développeur Orbis <span class="colored_text">@ CHU Nice Archet</span></p>
+                    <p class="exp_date">Octobre 2019 - Novembre 2020</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                    </ul>
+                </div>
+
+                <div id="exp_rt2i" class="experience_item">
+                    <p class="exp_title">Développeur FullStack <span class="colored_text">@ RT2i</span></p>
+                    <p class="exp_date">Novembre 2017 - Septembre 2019</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <footer class="flex-row">
             <p class="footer-text">Développé par Alex Ungur</p>
         </footer>
     </main>
 </body>
 </html>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script src="/js/script.js"></script>
