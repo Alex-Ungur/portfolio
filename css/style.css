@@ -12,7 +12,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 0.5fr repeat(8, 1fr) 0.5fr;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: auto;
     gap: 0;
     max-width: 1920px;
 }
@@ -32,19 +32,35 @@ header {
     grid-area: 1 / 1 / 2 / 11;
     height: var(--header-height);
     width: 100%;
-    grid-template-columns: 135px repeat(4, 1fr) repeat(4, 170px) 1fr;
+    grid-template-columns: 0.5fr repeat(4, 1fr) repeat(4, 170px) 0.5fr;
     grid-template-rows: 1fr;
     gap: 0 10px;
     align-items: center;
     background-color: rgba(10, 25, 47, 0.85);
     box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
 }
-    .logo {grid-area: 1 / 3 / 2 / 4;}
+    .logo {grid-area: 1 / 1 / 2 / 2;}
     #about-btn {grid-area: 1 / 6 / 2 / 7;}
     #experience-btn {grid-area: 1 / 7 / 2 / 8;}
     #contact-btn {grid-area: 1 / 8 / 2 / 9;;}
     #resume-btn {grid-area: 1 / 9 / 2 / 10;}
 
+    .logo {
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        height: 40px;
+        width: 40px;
+        border: var(--green) solid 2px;
+    }
+    .logo::after {
+        color: var(--green);
+        position: relative;
+        display: block;
+        content: "AU";
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
     .header-btn {
         display: flex;
         align-items: center;
@@ -418,9 +434,49 @@ header {
 /* PLACEMENT GRID */
 .experience_header {grid-area: 1 / 1 / 2 / 5;}
 .experience_tablist {grid-area: 2 / 1 / 5 / 2;}
-.experience_list {grid-area: 2 / 2 / 5 / 5;}
+.experience_list {grid-area: 2 / 2 / 5 / 5; min-height: 400px; font-weight: bold;}
+
+/* CONTACT */
+#contact {
+    grid-area:5 / 4 / 6 / 8;
+    height: auto;
+    text-align: center;
+    align-items: center;
+}
+
+    .contact_header,
+    .contact_header.numbered_heading::before {
+        font-size: 13px;
+        color: var(--green);
+    }
+
+    .contact_header.numbered_heading::after {
+        display: none;
+    }
+
+    .contact_title {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 15px;
+        color: var(--bright-font-color);
+    }
+
+    .contact_message {
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+    }
+
+    .contact_button {
+        color: var(--green);
+        margin: 50px 0;
+        width: fit-content;
+        padding: 15px;
+    }
+
 footer {
-    grid-area: 5 / 2 / 6 / 10;
+    grid-area: 6 / 2 / 7 / 10;
     height: 65px;
     align-items: center;
     justify-content: center;
