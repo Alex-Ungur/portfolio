@@ -1,0 +1,26 @@
+@media screen and (max-width : 1024px) {
+    .desktop {display: none;}
+    .tablet {display: flex;}
+
+
+    /* HEADER */
+    header {
+        position: relative;
+        top: 0;
+        grid-template-columns: 80px repeat(8, 1fr) 80px;
+    }
+
+        /* BOUTONS MENU */
+        .mobile_header {
+            align-items: center;
+        }
+        .header-btn {
+            width: max-content;
+            font-size: 22px;
+            margin: 15px 0;
+            letter-spacing: 0.8px;
+        }
+        .header-btn:first-child {
+            margin-top: 15vh;
+        }
+}

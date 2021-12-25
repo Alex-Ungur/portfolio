@@ -1,0 +1,15 @@
+@media screen and (max-width : 560px) {
+    .desktop {display: none;}
+    .tablet {display: flex;}
+
+
+    /* HEADER */
+    header {
+        position: relative;
+        top: 0;
+        grid-template-columns: 80px repeat(8, 1fr) 80px;
+    }
+
+    .shadowed_menu {display: none;}
+    .mobile_header {width: 100%;}
+}

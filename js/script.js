@@ -1,6 +1,8 @@
 // VARIABLES
 var experience_item = $(".experience_item");
 var tablist_item = $(".tablist_item");
+var mobile_btn = $(".mobile_btn_wrapper");
+var anchor_btn = $(".header-btn");
 
 // DECLENCHEURS
 experience_item.click(function() {
@@ -8,6 +10,15 @@ experience_item.click(function() {
     $(this).addClass("clicked");
 });
 
+mobile_btn.click(function(){
+    $(this).toggleClass("clicked");
+    $("body").toggleClass("block");
+});
+
+anchor_btn.click(function(){
+    $("body").removeClass("block");
+    mobile_btn.removeClass("clicked");
+});
 
 // FONCTIONS
 function toggleExp (buttonToClick, divToDisplay) {

@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Alex Ungur Developpeur Web">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1280px)" href="css/style_1280.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="css/style_1024.css">
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="css/style_750.css">
+    <link rel="stylesheet" media="screen and (max-width:560px)" href="css/style_560.css">
     <title>Alex Ungur</title>
 </head>
 <body class="h100 w100">
     <main>
         <header class="desktop">
             <div class="logo flex-row"></div>
-            <a href="#a_propos" id="about-btn" class="header-btn">A propos</a>
-            <a href="#experience" id="experience-btn" class="header-btn">Experience</a>
-            <a href="#contact" id="contact-btn" class="header-btn">Contact</a>
-            <a href="path_to_file" id="resume-btn" class="generic_btn" download="proposed_file_name">Télécharger CV</a>
+            <a href="#a_propos" id="about-btn" class="header-btn desktop">A propos</a>
+            <a href="#experience" id="experience-btn" class="header-btn desktop">Experience</a>
+            <a href="#contact" id="contact-btn" class="header-btn desktop">Contact</a>
+            <a id="projets-btn" class="header-btn desktop" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Projets</a>
+            <a href="/CV_Alex_Ungur.pdf" id="resume-btn" class="generic_btn desktop" download="CV_Alex_Ungur.pdf">Télécharger CV</a>
+            <div class="mobile_btn_wrapper flex-column tablet smartphone">
+                <div id="line1" class="mobile_btn_line"></div>
+                <div id="line2" class="mobile_btn_line"></div>
+                <div id="line3" class="mobile_btn_line"></div>
+            </div>
+            <nav id="#mobile_header" class="mobile_header flex-column tablet smartphone">
+                <a href="#a_propos" class="header-btn">A propos</a>
+                <a href="#experience" class="header-btn">Experience</a>
+                <a href="#contact" class="header-btn">Contact</a>
+                <a id="lien_projets" class="header-btn" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Projets</a>
+                <a href="/CV_Alex_Ungur.pdf" download="CV_Alex_Ungur.pdf" class="header-btn">CV</a>
+
+            </nav>
+            <div class="shadowed_menu">
+
+            </div>
         </header>
 
-        <nav id="#mobile_header" class="tablet smartphone">
-            <a href="#a_propos" class="aside-btn">A propos</a>
-            <a href="#experience" class="header-btn">Experience</a>
-            <a href="#contact" class="header-btn">Contact</a>
-            <a href="path_to_file" download="proposed_file_name" class="header-btn">CV</a>
-        </nav>
+
 
         <aside class="socials_btns w100">
             <ul class="socials_sticky flex-column">
@@ -43,11 +60,9 @@
                 <p class="introduction_header">Bonjour, je m'appelle</p>
                 <h1 class="introduction_name">Alex Ungur.</h1>
                 <p class="introduction_description">Developpeur Front-End.</p>
-                <p class="introduction_presentation">
-                    I’m a software engineer specializing in building 
-                    (and occasionally designing) exceptional digital experiences. 
-                    Currently, I’m focused on building accessible, 
-                    human-centered products at <span class="colored_text">Upstatement</span>
+                <p class="introduction_presentation generic_text">
+                    Je suis un développeur FullStack, actuellement spécialisé dans les téchnologies Front-End
+                    et je travaille chez<span class="colored_text"> CDS SOFT Studiel</span>
                 </p>
                 <a href="#a_propos" class="introduction_btn generic_btn flex-row">Lire la suite</a>
             </div>
@@ -55,18 +70,23 @@
 
         <section id="a_propos">
             <div class="a_propos_header">
-                <p class="a_propos_header_text numbered_heading flex-row">A propos</p>
+                <p class="a_propos_header_text numbered_heading section_title flex-row">A propos</p>
             </div>
             
-            <div class="a_propos_content flex-column">
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, eos!</p>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span class="colored_text">Omnis deserunt</span> exercitationem hic minus doloribus tempora!</p>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptate atque commodi inventore, blanditiis fuga?</p>
+            <div class="a_propos_content generic_text flex-column">
+                <p class="">Bonjour ! Je m'appelle Alex Ungur et je suis développeur Front-End. Mon intérêt pour
+                    le développement web a commencé en 2015 lorsque j'ai décidé d'approfondir mes connaissances
+                    en informatique en créant un CV en ligne.
+                </p>
+                <p class="">Jusqu'à aujourd'hui j'ai eu le privilége de travailler en collaboration avec plusieurs entreprises comme
+                    <span class="colored_text">RT2i</span> ou bien le <span class="colored_text">CHU de Nice</span></p>
+                <p class="">Voici quelques technologies avec lesquelles j'ai travaillé récemment :</p>
             </div>
 
             <div class="a_propos_photo h100">
-                <div class="overlay h100 w100"></div>
+                <!-- <img src="/ressources/profil.jpg" alt="image profil alex ungur"> -->
+                <div class="overlay h100 w100">
+                </div>
             </div>
 
             <div class="a_propos_technologies">
@@ -83,7 +103,7 @@
 
         <section id="experience">
             <div class="experience_header">
-                <p class="experience_header_text numbered_heading flex-row">Experience</p>
+                <p class="experience_header_text numbered_heading section_title flex-row">Experience</p>
             </div>
 
             <div class="experience_tablist flex-column h100">
@@ -97,10 +117,11 @@
                     <p class="exp_title">Développeur Front-End <span class="colored_text">@ CDS Soft Studiel</span></p>
                     <p class="exp_date">Mai 2021</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                        <li>Création de l’aspect graphique de différents sites (webshop / sites vitrines) pour un client du domaine automobile.</li>
+                        <li>Adaptation et optimisation de sites et applications web</li>
+                        <li>Conception et implémentation d’interfaces web performants.</li>
+                        <li>Focus sur la portabilité et l’accessibilité sur tous les supports.</li>
+                        <li><a id="lien_projets" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Lien de présentation des projets réalisés</a></li>
                     </ul>
                 </div>
 
@@ -108,9 +129,12 @@
                     <p class="exp_title">Développeur Orbis <span class="colored_text">@ CHU Nice Archet</span></p>
                     <p class="exp_date">Octobre 2019 - Novembre 2020</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                        <li>Développement d’un programme pour le Centre de lutte anti tuberculeuse (CLAT)</li>
+                        <li>Gestion de base de données d’un logiciel propriétaire.</li>
+                        <li>Développement des formulaires patients.</li>
+                        <li>Suivi du projet avec les clients.</li>
+                        <li>Adaptation d’un logiciel web sur un logiciel propriétaire.</li>
+                        <li>Création d’une interface destinée au corps médical.</li>
                     </ul>
                 </div>
 
@@ -118,20 +142,19 @@
                     <p class="exp_title">Développeur FullStack <span class="colored_text">@ RT2i</span></p>
                     <p class="exp_date">Novembre 2017 - Septembre 2019</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, repellat.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem rem reiciendis expedita itaque molestias maiores sint officiis velit sed!</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet doloremque tempora adipisci consequatur nam commodi ut aliquam ullam quidem error rem magnam excepturi, id non est aut laboriosam sit!</li>
+                        <li>J'ai travaillé au sein d'une equipe de 4 personnes</li>
+                        <li>Développement d’un logiciel de contrôle de volumes pour des entreprises pharmaceutiques (CEVA, Cenexi, Bausch et Lomb).</li>
+                        <li>Ce projet a pour but de faciliter le travail manuel des opérateurs et d’apporter un traçage des produits et actions fiable.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="flex-column">
-            <p class="contact_header numbered_heading">Ensuite ?</p>
-            <h2 class="contact_title">Me contacter</h2>
-            <p class="contact_message">Bien qu'actuellement en poste, je suis également
-                 à l'écoute d'opportunités pour un projet Front-End intéressant me permettant de progresser
-                et de faire progresser.
+            <p class="contact_header numbered_heading ">Ensuite ?</p>
+            <h2 class="contact_title section_title">Me contacter</h2>
+            <p class="contact_message generic_text">Bien qu'actuellement en poste, je suis également
+                 à l'écoute d'opportunités pour un projet Front-End.
             </p>
             <a href="mailto:alex.ungur@outlook.fr" class="contact_button generic_btn">Envoyer un message</a>
         </section>

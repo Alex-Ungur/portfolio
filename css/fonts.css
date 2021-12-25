@@ -36,16 +36,16 @@ body {
 
 .desktop {display: block;}
 
-.tablet {display: none;}
+.tablet {display: flex;}
 
-.smartphone {display: none;}
+.smartphone {display: flex;}
 
 
 @media screen and (max-width : 1024px) {
-    .tablet {display: block;}
+    .tablet {display: flex;}
     .desktop {display: none;}
 }
 @media screen and (max-width : 560px) {
-    .smartphone {display: block;}
+    .smartphone {display: flex;}
     .desktop {display: none;}
 }

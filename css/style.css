@@ -8,13 +8,19 @@ body {
     color: var(--font-color);
 }
 
+body.block {
+    overflow: hidden;
+}
+
 /* CONTENU PRINCIPAL */
 main {
+    position: relative;
     display: grid;
-    grid-template-columns: 0.5fr repeat(8, 1fr) 0.5fr;
+    grid-template-columns: 80px repeat(8, 1fr) 80px;
     grid-template-rows: auto;
     gap: 0;
     max-width: 1920px;
+    overflow-x: hidden;
 }
 
 /* INCREMENTATION NOMBRE DE SECTIONS */
@@ -24,15 +30,19 @@ section {
 
 :root {
     --header-height : 90px;
+    --generic-text : clamp(15px, 1vw, 35px);
 }
+
+.tablet, .smartphone {display: none;}
 /* HEADER */
 header {
+    position: relative;
     font-family: var(--font-mono);
     display: grid !important;
     grid-area: 1 / 1 / 2 / 11;
     height: var(--header-height);
     width: 100%;
-    grid-template-columns: 0.5fr repeat(4, 1fr) repeat(4, 170px) 0.5fr;
+    grid-template-columns: 80px repeat(4, 1fr) repeat(5, 170px) 80px;
     grid-template-rows: 1fr;
     gap: 0 10px;
     align-items: center;
@@ -43,7 +53,9 @@ header {
     #about-btn {grid-area: 1 / 6 / 2 / 7;}
     #experience-btn {grid-area: 1 / 7 / 2 / 8;}
     #contact-btn {grid-area: 1 / 8 / 2 / 9;;}
-    #resume-btn {grid-area: 1 / 9 / 2 / 10;}
+    #projets-btn {grid-area: 1 / 9 / 2 / 10;}
+    #resume-btn {grid-area: 1 / 10 / 2 / 11;}
+    .mobile_btn_wrapper {grid-area: 1 / 10 / 2 / 11;}
 
     .logo {
         align-items: center;
@@ -93,6 +105,63 @@ header {
         white-space: nowrap;
     }
 
+    .mobile_btn_wrapper {
+        /* border: var(--green) solid 2px; */
+        /* padding: 5px; */
+        width: 37px;
+        height: 37px;
+        padding: 0 3px;
+        cursor: pointer;
+        align-self: center;
+        justify-self: center;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        transition: all 0.2 ease;
+    }
+
+        .mobile_btn_wrapper.clicked {
+            outline: 2px dashed var(--green);
+            outline-offset: 3px;
+        }
+
+        .mobile_btn_line {
+            height: 2px;
+            width: 80%;
+            background-color: var(--green);
+        }
+        #line2 {width: 60%;}
+        #line3 {width: 40%;}
+
+        .mobile_header,
+        .shadowed_menu {
+            position: absolute;
+            top: 100%;
+            height: calc(100vh - var(--header-height));
+            z-index: 3;
+            transition: all 0.3s ease;
+
+        }
+        .mobile_header {
+            right: 0;
+            background-color: #112240;
+            width: 60%;
+            box-shadow: -10px 0px 30px -15px rgba(2,12,27,0.7);
+            transform: translateX(100%);
+        }
+
+        .mobile_btn_wrapper.clicked ~ .mobile_header{
+            transform: translateX(0%);
+        }
+
+        .shadowed_menu {
+            width: 40%;
+            left: 0;
+            transform: translateX(-100%);
+            background-color: rgb(2, 12, 27);
+        }
+        .mobile_btn_wrapper.clicked ~ .shadowed_menu{
+            transform: translateX(0%);
+        }
 
     /* RESEAUX */
 .socials_btns {
@@ -178,9 +247,9 @@ header {
         .introduction_name,
         .introduction_description {
             color: var(--bright-font-color);
-            font-size: clamp(40px, 8vw, 80px);
+            font-size: clamp(40px, 7vw, 80px);
             font-weight: 600;
-            line-height: 1.1;
+            line-height: 60px;
             margin-top: 15px;
         }
 
@@ -192,7 +261,7 @@ header {
             font-weight: bold;
             margin-top: 25px;
             max-width: 540px;
-            line-height: 1.5;
+            line-height: 2;
         }
             .colored_text {
                 color: var(--green);
@@ -232,7 +301,7 @@ header {
 #a_propos {
     position: relative;
     grid-area: 3 / 2 / 4 / 10;
-    height: 800px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -277,8 +346,8 @@ header {
             justify-content: space-evenly;
         }
             .a_propos_content p {
-                font-size: 20px;
-                line-height: 1.3;
+                /* font-size: clamp(15px, 1.5vw, 35px); */
+                line-height: 25px;
                 font-weight: bold;
             }
 
@@ -412,6 +481,9 @@ header {
                 margin: 10px 0;
             }
 
+            #lien_projets {
+                color: var(--green);
+            }
             .experience_item ul {
                 margin: 15px 0;
                 display: flex;
@@ -422,6 +494,7 @@ header {
                 .experience_item li {
                     line-height: 25px;
                     margin: 5px;
+                    font-size: var(--generic-text);
                 }
 
                 .experience_item li::before {
@@ -482,4 +555,14 @@ footer {
     justify-content: center;
     font-family: var(--font-mono);
     font-size: 15px;
+}
+
+/* CLASSES GENERALES */
+.section_title {
+    font-size: clamp(22px, 2vw, 80px);
+    white-space: nowrap;
+}
+
+.generic_text {
+    font-size: var(--generic-text);
 }
