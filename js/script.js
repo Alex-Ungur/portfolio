@@ -33,6 +33,7 @@ function toggleExp (buttonToClick, divToDisplay) {
     });
 }
 
+toggleExp($("#exp_dune_btn"), $("#exp_dune"));
 toggleExp($("#exp_cds_btn"), $("#exp_cds"));
 toggleExp($("#exp_chu_btn"), $("#exp_chu"));
 toggleExp($("#exp_rt2i_btn"), $("#exp_rt2i"));
