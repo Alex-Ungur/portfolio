@@ -429,7 +429,7 @@ header {
             font-family: var(--font-mono);
             color: var(--font-color);
             text-align: start;
-            padding: 0 25px;
+            padding: 0 15px;
             transition: all 0.2s ease;
         }
 
