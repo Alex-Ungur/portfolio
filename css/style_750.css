@@ -7,25 +7,29 @@
     .socials_sticky {
         display: none;
     }
+
     #a_propos {
         padding: 0;
         grid-template-rows: repeat(15, 1fr);
         gap: 0;
     }
 
-        .a_propos_header {
-            grid-area: 1 / 1 / 2 / 5;
-        }
-        .a_propos_content {
-            margin-top: 25px;
-            grid-area: 7 / 1 / 12 / 5;
-        }
-        .a_propos_photo {
-            grid-area: 2 / 1 / 7 / 5;
-        }
-        .a_propos_technologies {
-            grid-area: 12 / 1 / 14 / 5;
-        }
+    .a_propos_header {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .a_propos_content {
+        margin-top: 25px;
+        grid-area: 7 / 1 / 12 / 5;
+    }
+
+    .a_propos_photo {
+        grid-area: 2 / 1 / 7 / 5;
+    }
+
+    .a_propos_technologies {
+        grid-area: 12 / 1 / 14 / 5;
+    }
 
     #experience {
         padding: 0;
@@ -34,36 +38,39 @@
         margin-bottom: 25px;
     }
 
-        .experience_header {
-            height: max-content;
-            align-self: center;
-            width: 100%;
-        }
+    .experience_header {
+        height: max-content;
+        align-self: center;
+        width: 100%;
+    }
 
-        .experience_tablist {
-            width: 100%;
-            height: max-content;
-            grid-area: 1 / 1 / 2 / 5;
-            align-self: flex-end;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 30px 0;
-        }
-            .tablist_item {
-                text-align: center;
-                flex-grow: 1;
-                border: none;
-                padding: 5px;
-            }
-            .tablist_item.clicked,
-            .tablist_item.selected {
-                border: var(--green) solid 1px;
-            }
-        .experience_list {
-            grid-area: 2 / 1 / 5 / 5;
-        }
+    .experience_tablist {
+        width: 100%;
+        height: max-content;
+        grid-area: 1 / 1 / 2 / 5;
+        align-self: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
 
-        #contact {
-            grid-area: 5 / 2 / 6 / 10;
-        }
+    .tablist_item {
+        text-align: center;
+        flex-grow: 1;
+        border: none;
+        padding: 5px;
+    }
+
+    .tablist_item.clicked,
+    .tablist_item.selected {
+        border: var(--green) solid 1px;
+    }
+
+    .experience_list {
+        grid-area: 2 / 1 / 5 / 5;
+    }
+
+    #contact {
+        grid-area: 6 / 2 / 7 / 10;
+    }
 }
