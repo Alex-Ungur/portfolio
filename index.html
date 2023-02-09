@@ -1,194 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Alex Ungur Developpeur Web">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#0a192f">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:1280px)" href="css/style_1280.css">
-    <link rel="stylesheet" media="screen and (max-width:1024px)" href="css/style_1024.css">
-    <link rel="stylesheet" media="screen and (max-width:750px)" href="css/style_750.css">
-    <link rel="stylesheet" media="screen and (max-width:560px)" href="css/style_560.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="Alex Ungur Developpeur Web" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#0a192f" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1280px)"
+      href="css/style_1280.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1024px)"
+      href="css/style_1024.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:750px)"
+      href="css/style_750.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:560px)"
+      href="css/style_560.css"
+    />
     <title>Alex Ungur</title>
-</head>
-<body class="h100 w100">
+  </head>
+  <body class="h100 w100">
     <main>
-        <header class="desktop">
-            <div class="logo flex-row"></div>
-            <a href="#a_propos" id="about-btn" class="header-btn desktop">A propos</a>
-            <a href="#experience" id="experience-btn" class="header-btn desktop">Experience</a>
-            <a href="#contact" id="contact-btn" class="header-btn desktop">Contact</a>
-            <a id="projets-btn" class="header-btn desktop" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Projets</a>
-            <a href="/CV_Alex_Ungur.pdf" id="resume-btn" class="generic_btn desktop" download="CV_Alex_Ungur.pdf">Télécharger CV</a>
-            <div class="mobile_btn_wrapper flex-column tablet smartphone">
-                <div id="line1" class="mobile_btn_line"></div>
-                <div id="line2" class="mobile_btn_line"></div>
-                <div id="line3" class="mobile_btn_line"></div>
+      <header class="desktop">
+        <div class="logo flex-row"></div>
+        <a href="#a_propos" id="about-btn" class="header-btn desktop"
+          >A propos</a
+        >
+        <a href="#experience" id="experience-btn" class="header-btn desktop"
+          >Experience</a
+        >
+        <a href="#contact" id="contact-btn" class="header-btn desktop"
+          >Contact</a
+        >
+        <!-- <a
+          id="projets-btn"
+          class="header-btn desktop"
+          href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
+          target="_blank"
+          >Projets</a
+        > -->
+        <a href="#projets" id="projets-btn" class="header-btn desktop"
+          >Projets</a
+        >
+        <a
+          href="/CV_Alex_Ungur.pdf"
+          id="resume-btn"
+          class="generic_btn desktop"
+          download="CV_Alex_Ungur.pdf"
+          >Télécharger CV</a
+        >
+        <div class="mobile_btn_wrapper flex-column tablet smartphone">
+          <div id="line1" class="mobile_btn_line"></div>
+          <div id="line2" class="mobile_btn_line"></div>
+          <div id="line3" class="mobile_btn_line"></div>
+        </div>
+        <nav
+          id="#mobile_header"
+          class="mobile_header flex-column tablet smartphone"
+        >
+          <a href="#a_propos" class="header-btn">A propos</a>
+          <a href="#experience" class="header-btn">Experience</a>
+          <a href="#projets" class="header-btn">Projets</a>
+          <a href="#contact" class="header-btn">Contact</a>
+          <!-- <a
+            id="lien_projets"
+            class="header-btn"
+            href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
+            target="_blank"
+            >Projets</a
+          > -->
+          <a
+            href="/CV_Alex_Ungur.pdf"
+            download="CV_Alex_Ungur.pdf"
+            class="header-btn"
+            >CV</a
+          >
+        </nav>
+        <div class="shadowed_menu"></div>
+      </header>
+
+      <aside class="socials_btns w100">
+        <ul class="socials_sticky flex-column">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/alex-ungur-59b01012b/"
+              id="linkedin"
+              class="socials_btn"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:alex.ungur@outlook.fr"
+              id="mail"
+              class="socials_btn"
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <aside class="contact_mail"></aside>
+      <article id="introduction" class="w100 flex-row">
+        <div class="introduction_content flex-column">
+          <p class="introduction_header">Bonjour, je m'appelle</p>
+          <h1 class="introduction_name">Alex Ungur.</h1>
+          <p class="introduction_description">Developpeur Front-End.</p>
+          <p class="introduction_presentation generic_text">
+            Je suis un développeur <span class="colored_text">FullStack</span>,
+            actuellement spécialisé dans les téchnologies Front-End
+          </p>
+          <a href="#a_propos" class="introduction_btn generic_btn flex-row"
+            >Lire la suite</a
+          >
+        </div>
+      </article>
+
+      <section id="a_propos">
+        <div class="a_propos_header">
+          <p
+            class="a_propos_header_text numbered_heading section_title flex-row"
+          >
+            A propos
+          </p>
+        </div>
+
+        <div class="a_propos_content generic_text flex-column">
+          <p class="">
+            Bonjour ! Je m'appelle Alex Ungur et je suis développeur Front-End.
+            Mon intérêt pour le développement web a commencé en 2015 lorsque
+            j'ai décidé d'approfondir mes connaissances en informatique en
+            créant un CV en ligne.
+          </p>
+          <p class="">
+            Jusqu'à aujourd'hui j'ai eu le privilége de travailler en
+            collaboration avec plusieurs entreprises comme
+            <span class="colored_text">RT2i</span> ou bien
+            <span class="colored_text">CDSSOFT Studiel</span> et encore plus
+            récemment au sein de <span class="colored_text">Dune Gestion</span>
+          </p>
+          <p class="">
+            Voici quelques technologies avec lesquelles j'ai travaillé récemment
+            :
+          </p>
+        </div>
+
+        <div class="a_propos_photo h100">
+          <!-- <img src="/ressources/profil.jpg" alt="image profil alex ungur"> -->
+          <div class="overlay h100 w100"></div>
+        </div>
+
+        <div class="a_propos_technologies">
+          <ul class="flex-column">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>JQuery</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>React JS</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="experience_header">
+          <p
+            class="experience_header_text numbered_heading section_title flex-row"
+          >
+            Experience
+          </p>
+        </div>
+
+        <div class="experience_tablist flex-column h100">
+          <button id="exp_dune_btn" class="tablist_item selected">
+            Dune Gestion
+          </button>
+          <button id="exp_cds_btn" class="tablist_item">CDS SOFT</button>
+          <button id="exp_chu_btn" class="tablist_item">CHU Nice</button>
+          <button id="exp_rt2i_btn" class="tablist_item">RT2i</button>
+        </div>
+
+        <div class="experience_list">
+          <div id="exp_dune" class="experience_item selected">
+            <p class="exp_title">
+              Développeur PHP FullStack
+              <span class="colored_text">@ Dune Gestion</span>
+            </p>
+            <p class="exp_date">Mars 2022 - Juin 2022</p>
+            <ul>
+              <li>
+                Création et modification de sites web pour des clients du
+                domaine immobilier et nautique.
+              </li>
+              <li>Modification du logiciel CRM de l'entreprise</li>
+              <li>Adaptation et optimisation de sites et applications web</li>
+              <li>
+                Conception et implémentation d’interfaces web performants.
+              </li>
+              <li>
+                Focus sur la portabilité et l’accessibilité sur tous les
+                supports.
+              </li>
+            </ul>
+          </div>
+
+          <div id="exp_cds" class="experience_item">
+            <p class="exp_title">
+              Développeur Front-End
+              <span class="colored_text">@ CDS Soft Studiel</span>
+            </p>
+            <p class="exp_date">Mai 2021 - Mars 2022</p>
+            <ul>
+              <li>
+                Création de l’aspect graphique de différents sites (webshop /
+                sites vitrines) pour un client du domaine automobile.
+              </li>
+              <li>Adaptation et optimisation de sites et applications web</li>
+              <li>
+                Conception et implémentation d’interfaces web performants.
+              </li>
+              <li>
+                Focus sur la portabilité et l’accessibilité sur tous les
+                supports.
+              </li>
+              <li>
+                <a
+                  id="lien_projets"
+                  href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
+                  target="_blank"
+                  >Lien de présentation des projets réalisés</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="exp_chu" class="experience_item">
+            <p class="exp_title">
+              Développeur Orbis
+              <span class="colored_text">@ CHU Nice Archet</span>
+            </p>
+            <p class="exp_date">Octobre 2019 - Novembre 2020</p>
+            <ul>
+              <li>
+                Développement d’un programme pour le Centre de lutte anti
+                tuberculeuse (CLAT)
+              </li>
+              <li>Gestion de base de données d’un logiciel propriétaire.</li>
+              <li>Développement des formulaires patients.</li>
+              <li>Suivi du projet avec les clients.</li>
+              <li>
+                Adaptation d’un logiciel web sur un logiciel propriétaire.
+              </li>
+              <li>Création d’une interface destinée au corps médical.</li>
+            </ul>
+          </div>
+
+          <div id="exp_rt2i" class="experience_item">
+            <p class="exp_title">
+              Développeur FullStack <span class="colored_text">@ RT2i</span>
+            </p>
+            <p class="exp_date">Novembre 2017 - Septembre 2019</p>
+            <ul>
+              <li>J'ai travaillé au sein d'une equipe de 4 personnes</li>
+              <li>
+                Développement d’un logiciel de contrôle de volumes pour des
+                entreprises pharmaceutiques (CEVA, Cenexi, Bausch et Lomb).
+              </li>
+              <li>
+                Ce projet a pour but de faciliter le travail manuel des
+                opérateurs et d’apporter un traçage des produits et actions
+                fiable.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="flex">
+        <p class="exp_title numbered_heading section_title flex-row">Projets</p>
+        <div class="projets-wrapper">
+          <article class="item">
+            <img
+              src="/ressources/projets/passwordGenerator.JPG"
+              alt=""
+              class="item_img"
+            />
+            <p class="item_title">Générateur de mot de passe</p>
+            <div class="item_description">
+              <p>
+                Site ayant pour but de générer automatiquement un mot de passe
+                selon plusieurs critères séléctionnés
+              </p>
+              <label for="">Langages utilisés :</label>
+              <ul>
+                <li>JavaScript</li>
+                <li>Html</li>
+                <li>CSS</li>
+              </ul>
             </div>
-            <nav id="#mobile_header" class="mobile_header flex-column tablet smartphone">
-                <a href="#a_propos" class="header-btn">A propos</a>
-                <a href="#experience" class="header-btn">Experience</a>
-                <a href="#contact" class="header-btn">Contact</a>
-                <a id="lien_projets" class="header-btn" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Projets</a>
-                <a href="/CV_Alex_Ungur.pdf" download="CV_Alex_Ungur.pdf" class="header-btn">CV</a>
-
-            </nav>
-            <div class="shadowed_menu">
-
+            <a
+              href="https://dulcet-gumdrop-8304f8.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lien vers le site</a
+            >
+            <a
+              href="https://github.com/alexskip/passwordGenerator.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lien vers le code</a
+            >
+          </article>
+          <article class="item">
+            <img
+              src="/ressources/projets/dictionary.JPG"
+              alt=""
+              class="item_img"
+            />
+            <p class="item_title">Dictionnaire</p>
+            <div class="item_description">
+              <p>
+                Projet personnel en React faisant appel a une API anglaise
+                lorsqu'un mot est saisi dans la barre de recherche.
+              </p>
+              <label for="">Langages utilisés :</label>
+              <ul>
+                <li>React</li>
+                <li>Html</li>
+                <li>SCSS</li>
+                <li>Tailwind</li>
+              </ul>
             </div>
-        </header>
+            <a
+              href="https://profound-bienenstitch-16c187.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lien vers le site</a
+            >
+            <a
+              href="https://github.com/alexskip/dictionary.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lien vers le code</a
+            >
+          </article>
+        </div>
+      </section>
 
-
-
-        <aside class="socials_btns w100">
-            <ul class="socials_sticky flex-column">
-                <li>
-                    <a href="https://www.linkedin.com/in/alex-ungur-59b01012b/" id="linkedin" class="socials_btn"></a>
-                </li>
-                <li>
-                    <a href="mailto:alex.ungur@outlook.fr" id="mail" class="socials_btn"></a>
-                </li>
-           </ul>
-        </aside>
-        <aside class="contact_mail"></aside>
-        <article id="introduction" class="w100 flex-row">
-            <div class="introduction_content flex-column">
-                <p class="introduction_header">Bonjour, je m'appelle</p>
-                <h1 class="introduction_name">Alex Ungur.</h1>
-                <p class="introduction_description">Developpeur Front-End.</p>
-                <p class="introduction_presentation generic_text">
-                    Je suis un développeur <span class="colored_text">FullStack</span>, actuellement spécialisé dans les téchnologies Front-End
-                </p>
-                <a href="#a_propos" class="introduction_btn generic_btn flex-row">Lire la suite</a>
-            </div>
-        </article>
-
-        <section id="a_propos">
-            <div class="a_propos_header">
-                <p class="a_propos_header_text numbered_heading section_title flex-row">A propos</p>
-            </div>
-            
-            <div class="a_propos_content generic_text flex-column">
-                <p class="">Bonjour ! Je m'appelle Alex Ungur et je suis développeur Front-End. Mon intérêt pour
-                    le développement web a commencé en 2015 lorsque j'ai décidé d'approfondir mes connaissances
-                    en informatique en créant un CV en ligne.
-                </p>
-                <p class="">Jusqu'à aujourd'hui j'ai eu le privilége de travailler en collaboration avec plusieurs entreprises comme
-                    <span class="colored_text">RT2i</span> ou bien <span class="colored_text">CDSSOFT Studiel</span> et encore plus récemment au sein de <span class="colored_text">Dune Gestion</span></p>
-                <p class="">Voici quelques technologies avec lesquelles j'ai travaillé récemment :</p>
-            </div>
-
-            <div class="a_propos_photo h100">
-                <!-- <img src="/ressources/profil.jpg" alt="image profil alex ungur"> -->
-                <div class="overlay h100 w100">
-                </div>
-            </div>
-
-            <div class="a_propos_technologies">
-                <ul class="flex-column">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>JQuery</li>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                    <li>React JS</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="experience">
-            <div class="experience_header">
-                <p class="experience_header_text numbered_heading section_title flex-row">Experience</p>
-            </div>
-
-            <div class="experience_tablist flex-column h100">
-                <button id="exp_dune_btn" class="tablist_item selected">Dune Gestion</button>
-                <button id="exp_cds_btn" class="tablist_item">CDS SOFT</button>
-                <button id="exp_chu_btn" class="tablist_item">CHU Nice</button>
-                <button id="exp_rt2i_btn" class="tablist_item">RT2i</button>
-            </div>
-
-            <div class="experience_list">
-                <div id="exp_dune" class="experience_item selected">
-                    <p class="exp_title">Développeur PHP FullStack <span class="colored_text">@ Dune Gestion</span></p>
-                    <p class="exp_date">Mars 2022 - Juin 2022</p>
-                    <ul>
-                        <li>Création et modification de sites web pour des clients du domaine immobilier et nautique.</li>
-                        <li>Modification du logiciel CRM de l'entreprise</li>
-                        <li>Adaptation et optimisation de sites et applications web</li>
-                        <li>Conception et implémentation d’interfaces web performants.</li>
-                        <li>Focus sur la portabilité et l’accessibilité sur tous les supports.</li>
-                    </ul>
-                </div>
-                
-                <div id="exp_cds" class="experience_item">
-                    <p class="exp_title">Développeur Front-End <span class="colored_text">@ CDS Soft Studiel</span></p>
-                    <p class="exp_date">Mai 2021 - Mars 2022</p>
-                    <ul>
-                        <li>Création de l’aspect graphique de différents sites (webshop / sites vitrines) pour un client du domaine automobile.</li>
-                        <li>Adaptation et optimisation de sites et applications web</li>
-                        <li>Conception et implémentation d’interfaces web performants.</li>
-                        <li>Focus sur la portabilité et l’accessibilité sur tous les supports.</li>
-                        <li><a id="lien_projets" href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0" target="_blank">Lien de présentation des projets réalisés</a></li>
-                    </ul>
-                </div>
-
-                <div id="exp_chu" class="experience_item">
-                    <p class="exp_title">Développeur Orbis <span class="colored_text">@ CHU Nice Archet</span></p>
-                    <p class="exp_date">Octobre 2019 - Novembre 2020</p>
-                    <ul>
-                        <li>Développement d’un programme pour le Centre de lutte anti tuberculeuse (CLAT)</li>
-                        <li>Gestion de base de données d’un logiciel propriétaire.</li>
-                        <li>Développement des formulaires patients.</li>
-                        <li>Suivi du projet avec les clients.</li>
-                        <li>Adaptation d’un logiciel web sur un logiciel propriétaire.</li>
-                        <li>Création d’une interface destinée au corps médical.</li>
-                    </ul>
-                </div>
-
-                <div id="exp_rt2i" class="experience_item">
-                    <p class="exp_title">Développeur FullStack <span class="colored_text">@ RT2i</span></p>
-                    <p class="exp_date">Novembre 2017 - Septembre 2019</p>
-                    <ul>
-                        <li>J'ai travaillé au sein d'une equipe de 4 personnes</li>
-                        <li>Développement d’un logiciel de contrôle de volumes pour des entreprises pharmaceutiques (CEVA, Cenexi, Bausch et Lomb).</li>
-                        <li>Ce projet a pour but de faciliter le travail manuel des opérateurs et d’apporter un traçage des produits et actions fiable.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="flex-column">
-            <p class="contact_header numbered_heading ">Ensuite ?</p>
-            <h2 class="contact_title section_title">Me contacter</h2>
-            <!-- <p class="contact_message generic_text">Bien qu'actuellement en poste, je suis également
+      <section id="contact" class="flex-column">
+        <p class="contact_header numbered_heading">Ensuite ?</p>
+        <h2 class="contact_title section_title">Me contacter</h2>
+        <!-- <p class="contact_message generic_text">Bien qu'actuellement en poste, je suis également
                  à l'écoute d'opportunités pour un projet Front-End.
             </p> -->
-            <a href="mailto:alex.ungur@outlook.fr" class="contact_button generic_btn">Envoyer un message</a>
-        </section>
+        <a
+          href="mailto:alex.ungur@outlook.fr"
+          class="contact_button generic_btn"
+          >Envoyer un message</a
+        >
+      </section>
 
-        <footer class="flex-row">
-            <p class="footer-text">Développé par Alex Ungur</p>
-        </footer>
+      <footer class="flex-row">
+        <p class="footer-text">Développé par Alex Ungur</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous">
-</script>
+  crossorigin="anonymous"
+></script>
 <script src="/js/script.js"></script>
