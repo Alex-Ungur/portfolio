@@ -5,34 +5,35 @@ var mobile_btn = $(".mobile_btn_wrapper");
 var anchor_btn = $(".header-btn");
 
 // DECLENCHEURS
-experience_item.click(function() {
-    $(this).siblings().removeClass("clicked");
-    $(this).addClass("clicked");
+experience_item.click(function () {
+  $(this).siblings().removeClass("clicked");
+  $(this).addClass("clicked");
 });
 
-mobile_btn.click(function(){
-    $(this).toggleClass("clicked");
-    $("body").toggleClass("block");
+mobile_btn.click(function () {
+  $(this).toggleClass("clicked");
+  $("body").toggleClass("block");
 });
 
-anchor_btn.click(function(){
-    $("body").removeClass("block");
-    mobile_btn.removeClass("clicked");
+anchor_btn.click(function () {
+  $("body").removeClass("block");
+  mobile_btn.removeClass("clicked");
 });
 
 // FONCTIONS
-function toggleExp (buttonToClick, divToDisplay) {
-    buttonToClick.click(function(){
-        $(this).siblings().removeClass("selected");
-        $(this).siblings().removeClass("clicked");
-        $(this).addClass("selected");
-        $(this).addClass("clicked");
-        divToDisplay.siblings().removeClass("selected");
-        divToDisplay.siblings().removeClass("clicked");
-        divToDisplay.addClass("selected");
-    });
+function toggleExp(buttonToClick, divToDisplay) {
+  buttonToClick.click(function () {
+    $(this).siblings().removeClass("selected");
+    $(this).siblings().removeClass("clicked");
+    $(this).addClass("selected");
+    $(this).addClass("clicked");
+    divToDisplay.siblings().removeClass("selected");
+    divToDisplay.siblings().removeClass("clicked");
+    divToDisplay.addClass("selected");
+  });
 }
 
+toggleExp($("#exp_freelance_btn"), $("#exp_freelance"));
 toggleExp($("#exp_dune_btn"), $("#exp_dune"));
 toggleExp($("#exp_cds_btn"), $("#exp_cds"));
 toggleExp($("#exp_chu_btn"), $("#exp_chu"));
