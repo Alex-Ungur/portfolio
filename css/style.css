@@ -19,7 +19,6 @@ main {
     grid-template-columns: 80px repeat(8, 1fr) 80px;
     grid-template-rows: auto;
     gap: 0;
-    /* max-width: 1920px; */
     overflow-x: hidden;
 }
 
