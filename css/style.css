@@ -71,12 +71,12 @@ header {
 }
 
 #contact-btn {
-    grid-area: 1 / 8 / 2 / 9;
+    grid-area: 1 / 9 / 2 / 10;
     ;
 }
 
 #projets-btn {
-    grid-area: 1 / 9 / 2 / 10;
+    grid-area: 1 / 8 / 2 / 9;
 }
 
 #resume-btn {
