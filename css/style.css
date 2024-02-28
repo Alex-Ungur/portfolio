@@ -416,7 +416,7 @@ header {
 }
 
 .a_propos_photo {
-    background: url("/ressources/profil.jpg")no-repeat center / cover;
+    background: url("/portfolio/ressources/profil.jpg")no-repeat center / cover;
     border-radius: 5px;
     width: 60%;
     /* filter: grayscale(100%) contrast(1);
