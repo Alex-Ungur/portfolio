@@ -277,7 +277,7 @@ main {
 /* About */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(12rem, 18rem);
+  /* grid-template-columns: minmax(0, 1fr) minmax(12rem, 18rem); */
   gap: 3.5rem;
   align-items: start;
 }
