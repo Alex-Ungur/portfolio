@@ -1,40 +1,44 @@
-// VARIABLES
-var experience_item = $(".experience_item");
-var tablist_item = $(".tablist_item");
-var mobile_btn = $(".mobile_btn_wrapper");
-var anchor_btn = $(".header-btn");
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector("#site-nav");
+const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+const sections = document.querySelectorAll("main section[id]");
 
-// DECLENCHEURS
-experience_item.click(function () {
-  $(this).siblings().removeClass("clicked");
-  $(this).addClass("clicked");
-});
-
-mobile_btn.click(function () {
-  $(this).toggleClass("clicked");
-  $("body").toggleClass("block");
-});
-
-anchor_btn.click(function () {
-  $("body").removeClass("block");
-  mobile_btn.removeClass("clicked");
-});
-
-// FONCTIONS
-function toggleExp(buttonToClick, divToDisplay) {
-  buttonToClick.click(function () {
-    $(this).siblings().removeClass("selected");
-    $(this).siblings().removeClass("clicked");
-    $(this).addClass("selected");
-    $(this).addClass("clicked");
-    divToDisplay.siblings().removeClass("selected");
-    divToDisplay.siblings().removeClass("clicked");
-    divToDisplay.addClass("selected");
-  });
+function setMenu(open) {
+  document.body.classList.toggle("nav-open", open);
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute(
+      "aria-label",
+      open ? "Fermer le menu" : "Ouvrir le menu"
+    );
+  }
 }
 
-toggleExp($("#exp_freelance_btn"), $("#exp_freelance"));
-toggleExp($("#exp_dune_btn"), $("#exp_dune"));
-toggleExp($("#exp_cds_btn"), $("#exp_cds"));
-toggleExp($("#exp_chu_btn"), $("#exp_chu"));
-toggleExp($("#exp_rt2i_btn"), $("#exp_rt2i"));
+navToggle?.addEventListener("click", () => {
+  setMenu(!document.body.classList.contains("nav-open"));
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => setMenu(false));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenu(false);
+});
+
+if (siteNav && "IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          const active = link.getAttribute("href") === `#${entry.target.id}`;
+          link.classList.toggle("is-active", active);
+        });
+      });
+    },
+    { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}

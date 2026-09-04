@@ -1,476 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="description"
+      content="Alex Ungur — développeur front-end. Interfaces, sites et applications web."
     />
-    <meta name="description" content="Alex Ungur Developpeur Web" />
+    <meta name="theme-color" content="#12161a" />
+    <title>Alex Ungur — Développeur front-end</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2c6b78" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/portfolio/apple-touch-icon.png"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+      rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/portfolio/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/portfolio/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#0a192f" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:1280px)"
-      href="css/style_1280.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:1024px)"
-      href="css/style_1024.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:750px)"
-      href="css/style_750.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:560px)"
-      href="css/style_560.css"
-    />
-    <title>Alex Ungur</title>
   </head>
-  <body class="h100 w100">
-    <main>
-      <header class="desktop">
-        <div class="logo flex-row"></div>
-        <a href="#a_propos" id="about-btn" class="header-btn desktop"
-          >A propos</a
-        >
-        <a href="#experience" id="experience-btn" class="header-btn desktop"
-          >Experience</a
-        >
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
-        <a href="#projets" id="projets-btn" class="header-btn desktop"
-          >Projets</a
-        >
-        <a href="#contact" id="contact-btn" class="header-btn desktop"
-          >Contact</a
-        >
-        <!-- <a
-          id="projets-btn"
-          class="header-btn desktop"
-          href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
-          target="_blank"
-          >Projets</a
-        > -->
-        <a
-          href="/portfolio/CV_ALEX_UNGUR_2024.pdf"
-          id="resume-btn"
-          class="generic_btn desktop"
-          download="CV_ALEX_UNGUR_2024.pdf"
-          >Télécharger CV</a
-        >
-        <div class="mobile_btn_wrapper flex-column tablet smartphone">
-          <div id="line1" class="mobile_btn_line"></div>
-          <div id="line2" class="mobile_btn_line"></div>
-          <div id="line3" class="mobile_btn_line"></div>
-        </div>
-        <nav
-          id="#mobile_header"
-          class="mobile_header flex-column tablet smartphone"
-        >
-          <a href="#a_propos" class="header-btn">A propos</a>
-          <a href="#experience" class="header-btn">Experience</a>
-          <a href="#projets" class="header-btn">Projets</a>
-          <a href="#contact" class="header-btn">Contact</a>
-          <!-- <a
-            id="lien_projets"
-            class="header-btn"
-            href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
-            target="_blank"
-            >Projets</a
-          > -->
+    <aside class="spine" aria-label="Identité">
+      <a class="mark" href="#introduction" aria-label="Retour en haut">AU</a>
+      <p class="spine-name">Alex Ungur</p>
+      <ul class="spine-socials">
+        <li>
           <a
-            href="/CV_ALEX_UNGUR_2024.pdf"
-            download="CV_ALEX_UNGUR_2024.pdf"
-            class="header-btn"
-            >CV</a
+            href="https://www.linkedin.com/in/alex-ungur-59b01012b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-        </nav>
-        <div class="shadowed_menu"></div>
-      </header>
-
-      <aside class="socials_btns w100">
-        <ul class="socials_sticky flex-column">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/alex-ungur-59b01012b/"
-              id="linkedin"
-              class="socials_btn"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="mailto:alex.ungur@outlook.fr"
-              id="mail"
-              class="socials_btn"
-            ></a>
-          </li>
-        </ul>
-      </aside>
-      <aside class="contact_mail"></aside>
-      <article id="introduction" class="w100 flex-row max-w-full">
-        <div class="introduction_content flex-column">
-          <p class="introduction_header">Bonjour, je m'appelle</p>
-          <h1 class="introduction_name">Alex Ungur.</h1>
-          <p class="introduction_description">Developpeur Front-End.</p>
-          <p class="introduction_presentation generic_text">
-            Je suis un développeur <span class="colored_text">FullStack</span>,
-            actuellement spécialisé dans les téchnologies Front-End
-          </p>
-          <a href="#a_propos" class="introduction_btn generic_btn flex-row"
-            >Lire la suite</a
-          >
-        </div>
-      </article>
-
-      <section id="a_propos" class="max-w-full">
-        <div class="a_propos_header">
-          <p
-            class="a_propos_header_text numbered_heading section_title flex-row"
-          >
-            A propos
-          </p>
-        </div>
-
-        <div class="a_propos_content generic_text flex-column">
-          <p class="">
-            Bonjour ! Je m'appelle Alex Ungur et je suis développeur Front-End.
-            Mon intérêt pour le développement web a commencé en 2015 lorsque
-            j'ai décidé d'approfondir mes connaissances en informatique en
-            créant un CV en ligne.
-          </p>
-          <p class="">
-            Jusqu'à aujourd'hui j'ai eu le privilége de travailler en
-            collaboration avec plusieurs entreprises comme
-            <span class="colored_text">RT2i</span> ou bien
-            <span class="colored_text">CDSSOFT Studiel</span> et encore plus
-            récemment au sein de <span class="colored_text">Dune Gestion</span>
-          </p>
-          <p class="">
-            Voici quelques technologies avec lesquelles j'ai travaillé récemment
-            :
-          </p>
-        </div>
-
-        <div class="a_propos_photo h100">
-          <!-- <img src="/ressources/profil.jpg" alt="image profil alex ungur"> -->
-          <div class="overlay h100 w100"></div>
-        </div>
-
-        <div class="a_propos_technologies">
-          <ul class="flex-column">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript (ES6+)</li>
-            <li>JQuery</li>
-            <li>React</li>
-            <li>NextJS 13</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="experience" class="max-w-full">
-        <div class="experience_header">
-          <p
-            class="experience_header_text numbered_heading section_title flex-row"
-          >
-            Experience
-          </p>
-        </div>
-
-        <div class="experience_tablist flex-column h100">
-          <button id="exp_freelance_btn" class="tablist_item selected">
-            Freelance
-          </button>
-          <!-- <button id="exp_dune_btn" class="tablist_item">Dune Gestion</button> -->
-          <button id="exp_cds_btn" class="tablist_item">CDS SOFT</button>
-          <button id="exp_chu_btn" class="tablist_item">CHU Nice</button>
-          <button id="exp_rt2i_btn" class="tablist_item">RT2i</button>
-        </div>
-
-        <div class="experience_list">
-          <div id="exp_freelance" class="experience_item selected">
-            <p class="exp_title">
-              Développeur Front-End NextJS
-              <span class="colored_text">@ Freelance</span>
-            </p>
-            <p class="exp_date">Août 2022</p>
-            <ul>
-              <li>
-                Création et modification de sites web, site vitrine en HTML CSS
-                et Javascript
-              </li>
-              <li>
-                Conception, création et implémentation de composants en React
-                sous NextJS 13.
-              </li>
-            </ul>
-          </div>
-          <!-- <div id="exp_dune" class="experience_item">
-            <p class="exp_title">
-              Développeur PHP FullStack
-              <span class="colored_text">@ Dune Gestion</span>
-            </p>
-            <p class="exp_date">Mars 2022 - Juin 2022</p>
-            <ul>
-              <li>
-                Création et modification de sites web pour des clients du
-                domaine immobilier et nautique.
-              </li>
-              <li>Modification du logiciel CRM de l'entreprise</li>
-              <li>Adaptation et optimisation de sites et applications web</li>
-              <li>
-                Conception et implémentation d’interfaces web performants.
-              </li>
-              <li>
-                Focus sur la portabilité et l’accessibilité sur tous les
-                supports.
-              </li>
-            </ul>
-          </div> -->
-
-          <div id="exp_cds" class="experience_item">
-            <p class="exp_title">
-              Développeur Front-End
-              <span class="colored_text">@ CDS Soft Studiel</span>
-            </p>
-            <p class="exp_date">Mai 2021 - Mars 2022</p>
-            <ul>
-              <li>
-                Création de l’aspect graphique de différents sites (webshop /
-                sites vitrines) pour un client du domaine automobile.
-              </li>
-              <li>Adaptation et optimisation de sites et applications web</li>
-              <li>
-                Conception et implémentation d’interfaces web performants.
-              </li>
-              <li>
-                Focus sur la portabilité et l’accessibilité sur tous les
-                supports.
-              </li>
-              <li>
-                <a
-                  id="lien_projets"
-                  href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
-                  target="_blank"
-                  >Lien de présentation des projets réalisés</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div id="exp_chu" class="experience_item">
-            <p class="exp_title">
-              Développeur Orbis
-              <span class="colored_text">@ CHU Nice Archet</span>
-            </p>
-            <p class="exp_date">Octobre 2019 - Novembre 2020</p>
-            <ul>
-              <li>
-                Développement d’un programme pour le Centre de lutte anti
-                tuberculeuse (CLAT)
-              </li>
-              <li>Gestion de base de données d’un logiciel propriétaire.</li>
-              <li>Développement des formulaires patients.</li>
-              <li>Suivi du projet avec les clients.</li>
-              <li>
-                Adaptation d’un logiciel web sur un logiciel propriétaire.
-              </li>
-              <li>Création d’une interface destinée au corps médical.</li>
-            </ul>
-          </div>
-
-          <div id="exp_rt2i" class="experience_item">
-            <p class="exp_title">
-              Développeur FullStack <span class="colored_text">@ RT2i</span>
-            </p>
-            <p class="exp_date">Novembre 2017 - Septembre 2019</p>
-            <ul>
-              <li>Évolution au sein d'une equipe de 4 personnes</li>
-              <li>
-                Développement d’un logiciel de contrôle de volumes pour des
-                entreprises pharmaceutiques (CEVA, Cenexi, Bausch et Lomb).
-              </li>
-              <li>
-                Ce projet a pour but de faciliter le travail manuel des
-                opérateurs et d’apporter un traçage des produits et actions
-                fiable.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="projets" class="flex max-w-full">
-        <p class="exp_title numbered_heading section_title flex-row">Projets</p>
-        <div class="projets-wrapper">
-          <article class="item">
-            <div class="item_img-holder">
-              <img
-                src="/portfolio/ressources/projets/passwordGenerator.JPG"
-                alt=""
-                class="item_img"
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.82-2.1 3.75-2.1 4 0 4.75 2.6 4.75 6V24h-4v-7.7c0-1.8-.03-4.2-2.55-4.2-2.56 0-2.95 2-2.95 4.1V24h-4V8.5z"
               />
-            </div>
-            <p class="item_title">Générateur de mot de passe</p>
-            <div class="item_description">
-              <p>
-                Site ayant pour but de générer automatiquement un mot de passe
-                selon plusieurs critères séléctionnés
-              </p>
-              <label for="">Langages utilisés :</label>
-              <ul>
-                <li>JavaScript</li>
-                <li>Html</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <!-- href="https://dulcet-gumdrop-8304f8.netlify.app/" -->
-            <a
-              href="https://alex-ungur.github.io/passwordGenerator/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le site</a
-            >
-            <a
-              href="https://github.com/alexskip/passwordGenerator.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le code</a
-            >
-          </article>
-          <article class="item">
-            <div class="item_img-holder">
-              <img
-                src="/portfolio/ressources/projets/ecommerce.png"
-                alt=""
-                class="item_img"
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:alex.ungur@outlook.fr" aria-label="Envoyer un e-mail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M2 4h20v16H2V4zm2 2v.4l8 5.6 8-5.6V6H4zm16 12V10l-8 5.6L4 10v8h16z"
               />
-            </div>
-            <p class="item_title">Site ecommerce</p>
-            <div class="item_description">
-              <p>
-                Ce site à été crée en React.js avec Vite. Le site propose un
-                système d'authentification, d'affichage de produits appelés en
-                base de données firebase, ainsi qu'un système de panier. Si
-                l'utilisateur est connecté, il pourra importer ses produits qui
-                sont ensuite enregistrées dans la base de données.
-              </p>
-              <label for="">Langages utilisés :</label>
-              <ul>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Tailwind</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-            <a
-              href="https://alex-ungur.github.io/ecommerceProject/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le site</a
-            >
-            <a
-              href="https://github.com/alex-ungur/ecommerceProject.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le code</a
-            >
-          </article>
-          <article class="item">
-            <div class="item_img-holder">
-              <img
-                src="/portfolio/ressources/projets/dictionary.JPG"
-                alt=""
-                class="item_img"
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/alex-ungur"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58 0-.28-.01-1.02-.02-2-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"
               />
-            </div>
-            <p class="item_title">Dictionnaire</p>
-            <div class="item_description">
-              <p>
-                Projet personnel en React faisant appel a une API anglaise
-                lorsqu'un mot est saisi dans la barre de recherche.
-              </p>
-              <label for="">Langages utilisés :</label>
-              <ul>
-                <li>React</li>
-                <li>Html</li>
-                <li>SCSS</li>
-                <li>Tailwind</li>
-              </ul>
-            </div>
-            <!-- href="https://profound-bienenstitch-16c187.netlify.app/" -->
-            <a
-              href="https://alex-ungur.github.io/dictionary"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le site</a
-            >
-            <a
-              href="https://github.com/alex-ungur/dictionary.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lien vers le code</a
-            >
-          </article>
-        </div>
-      </section>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </aside>
 
-      <section id="contact" class="flex-column max-w-full">
-        <p class="contact_header numbered_heading">Ensuite ?</p>
-        <h2 class="contact_title section_title">Me contacter</h2>
-        <!-- <p class="contact_message generic_text">Bien qu'actuellement en poste, je suis également
-                 à l'écoute d'opportunités pour un projet Front-End.
-            </p> -->
+    <header class="topbar">
+      <a class="mark mark--mobile" href="#introduction" aria-label="Retour en haut">AU</a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="#a_propos">À propos</a>
+        <a href="#experience">Parcours</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
         <a
-          href="mailto:alex.ungur@outlook.fr"
-          class="contact_button generic_btn"
-          >Envoyer un message</a
+          class="nav-cv"
+          href="CV_ALEX_UNGUR_2024.pdf"
+          download="CV_ALEX_UNGUR_2024.pdf"
+          >Télécharger le CV</a
+        >
+      </nav>
+      <a class="cv" href="CV_ALEX_UNGUR_2024.pdf" download="CV_ALEX_UNGUR_2024.pdf">Télécharger le CV</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="contenu">
+      <section id="introduction" class="hero">
+        <p class="hero-role">Développeur front-end</p>
+        <h1>
+          Alex<br />
+          Ungur
+        </h1>
+        <p class="hero-text">
+          J’ai commencé par un CV en ligne en 2015. Je construis toujours des
+          interfaces — plus claires, plus solides, pensées pour durer.
+        </p>
+        <a class="text-link" href="#a_propos">Continuer</a>
+      </section>
+
+      <section id="a_propos" class="about">
+        <h2>À propos</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              Je m’appelle Alex Ungur. Curieux d’informatique, j’ai appris le web
+              en fabriquant ce premier CV — et je n’ai pas vraiment arrêté depuis.
+            </p>
+            <p>
+              J’ai travaillé avec <strong>RT2i</strong>,
+              <strong>CDS Soft Studiel</strong> et
+              <strong>Dune Gestion</strong> : sites vitrines, interfaces métier,
+              composants React. Aujourd’hui je me concentre sur le front-end,
+              avec une base fullstack.
+            </p>
+            <ul class="tech-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+            </ul>
+          </div>
+          <figure class="portrait">
+            <img
+              src="ressources/profil.jpg"
+              alt="Portrait d’Alex Ungur"
+              width="640"
+              height="800"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <h2>Parcours</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">Depuis août 2022</p>
+            <div>
+              <h3>Développeur front-end Next.js <span>Freelance</span></h3>
+              <ul>
+                <li>Sites vitrines en HTML, CSS et JavaScript.</li>
+                <li>
+                  Conception et intégration de composants React sous Next.js 13.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when">Mars 2022 — juin 2022</p>
+            <div>
+              <h3>Développeur PHP fullstack <span>Dune Gestion</span></h3>
+              <ul>
+                <li>
+                  Sites pour des clients de l’immobilier et du nautisme.
+                </li>
+                <li>Évolutions du CRM interne.</li>
+                <li>
+                  Adaptation des interfaces à tous les supports, avec un regard
+                  sur l’accessibilité.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when">Mai 2021 — mars 2022</p>
+            <div>
+              <h3>Développeur front-end <span>CDS Soft Studiel</span></h3>
+              <ul>
+                <li>
+                  Direction visuelle de webshops et sites vitrines pour un
+                  client automobile.
+                </li>
+                <li>Optimisation et portabilité des interfaces.</li>
+                <li>
+                  <a
+                    href="https://www.dropbox.com/sh/2tccvyhppe24hv0/AAAxoPRu8o-67Q-iK11uyCZCa?dl=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Présentation des projets</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when">Octobre 2019 — novembre 2020</p>
+            <div>
+              <h3>Développeur Orbis <span>CHU Nice Archet</span></h3>
+              <ul>
+                <li>
+                  Programme pour le Centre de lutte antituberculeuse (CLAT).
+                </li>
+                <li>Formulaires patients et suivi avec les équipes métier.</li>
+                <li>
+                  Interface destinée au corps médical, sur un logiciel
+                  propriétaire.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when">Novembre 2017 — septembre 2019</p>
+            <div>
+              <h3>Développeur fullstack <span>RT2i</span></h3>
+              <ul>
+                <li>Équipe de quatre personnes.</li>
+                <li>
+                  Logiciel de contrôle de volumes pour CEVA, Cenexi, Bausch +
+                  Lomb : moins de saisie manuelle, un traçage plus fiable.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="projets" class="projects">
+        <h2>Projets</h2>
+        <article class="project">
+          <div class="project-media">
+            <img
+              src="ressources/projets/ecommerce.png"
+              alt="Capture du site e-commerce : bannière, recherche et grille de produits"
+              width="1600"
+              height="900"
+            />
+          </div>
+          <div class="project-body">
+            <h3>Boutique e-commerce</h3>
+            <p>
+              Application React (Vite) : authentification, catalogue lu depuis
+              Firebase, panier. Un compte connecté peut importer des produits,
+              ensuite enregistrés en base.
+            </p>
+            <p class="stack">TypeScript, React, Tailwind, Firebase</p>
+            <p class="project-links">
+              <a
+                href="https://alex-ungur.github.io/ecommerceProject/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le site</a
+              >
+              <a
+                href="https://github.com/alex-ungur/ecommerceProject"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le code</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <img
+              src="ressources/projets/dictionary.JPG"
+              alt="Capture du dictionnaire affichant la définition du mot keyboard"
+              width="1600"
+              height="900"
+            />
+          </div>
+          <div class="project-body">
+            <h3>Dictionnaire</h3>
+            <p>
+              Recherche un mot dans une API anglaise et affiche prononciation,
+              sens et exemples. Thème clair ou sombre, choix de police.
+            </p>
+            <p class="stack">React, SCSS, Tailwind</p>
+            <p class="project-links">
+              <a
+                href="https://alex-ungur.github.io/dictionary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le site</a
+              >
+              <a
+                href="https://github.com/alex-ungur/dictionary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le code</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <img
+              src="ressources/projets/passwordGenerator.JPG"
+              alt="Capture du générateur de mot de passe avec options de complexité"
+              width="1600"
+              height="900"
+            />
+          </div>
+          <div class="project-body">
+            <h3>Générateur de mot de passe</h3>
+            <p>
+              Compose un mot de passe selon la longueur et les jeux de
+              caractères choisis, avec un indicateur de complexité.
+            </p>
+            <p class="stack">JavaScript, HTML, CSS</p>
+            <p class="project-links">
+              <a
+                href="https://alex-ungur.github.io/passwordGenerator/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le site</a
+              >
+              <a
+                href="https://github.com/alexskip/passwordGenerator"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Voir le code</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Me écrire</h2>
+        <p>Un projet, une question, une opportunité.</p>
+        <a class="mail" href="mailto:alex.ungur@outlook.fr"
+          >alex.ungur@outlook.fr</a
         >
       </section>
-
-      <footer class="flex-row">
-        <p class="footer-text">Développé par Alex Ungur</p>
-      </footer>
     </main>
+
+    <footer>
+      <p>Alex Ungur © Tous droits réservés</p>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
-
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"
-></script>
-<script src="/js/script.js"></script>
